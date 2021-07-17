@@ -16,7 +16,7 @@ object question2 extends App{
       case _ => prime(n, k+1)
    }
 
-   def primeSeq(n: Int):Any = {
+   def primeSeq(n: Int):Unit = {
       if(n>1){
          primeSeq(n-1)
          if(prime(n)) println(n)
